@@ -1,0 +1,144 @@
+/**
+ * Creating a sidebar enables you to:
+ - create an ordered group of docs
+ - render a sidebar for each doc of that group
+ - provide next/previous navigation
+
+ The sidebars can be generated from the filesystem, or explicitly defined here.
+
+ Create as many sidebars as you want.
+ */
+
+// @ts-check
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const sidebars = {
+    // home:
+    // [
+
+      
+    // ],
+    嵌入式开发: 
+    [
+      'Home',
+      {
+        type: 'category',
+        label: '嵌入式开发基础',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+          /* 添加界面 */
+          slug: '/嵌入式开发',
+        },
+        items: [
+          'TODO0',  
+        ],
+      },
+      {
+        type: 'category',
+        label: '通用单片机开发',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+        },
+        /* 一级目录 */
+        items: 
+        [
+          'TODO1',
+          // /* 二级目录 */
+          // {
+          //   type: 'category',
+          //   label: 'LVGL专栏',
+          //   link: {
+          //     type: 'generated-index',
+          //   },
+          //   items: [
+          //     'LVGL移植', 
+          //     'LVGL', 
+          //   ],
+          // },
+        ],
+      },
+    ],  
+
+    软件编程: 
+    [
+      {
+        type: 'category',
+        label: 'QT开发',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+          slug: '/软件编程',
+        },
+        items: [
+          "TODO2"
+        ],
+      },
+      {
+        type: 'category',
+        label: 'ROS开发',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+        },
+        items: [
+          "TODO3"
+        ],
+      },
+    ],
+    电机控制: 
+    [
+      {
+        type: 'category',
+        label: '电机控制',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+          slug: '/电机控制',
+        },
+        items: [
+          "TODO4"
+        ],
+      },
+    ],
+    高效办公: 
+    [
+      {
+        type: 'category',
+        label: '高效办公',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+          slug: '/高效办公',
+        },
+        items: [
+          "TODO5"
+        ],
+      },
+    ],
+    项目介绍: 
+    [
+      {
+        type: 'category',
+        label: '项目介绍',
+        link: {
+          type: 'generated-index',
+          //description: 'describtion to be updated',
+          keywords: ['x', 'x'],
+          slug: '/项目介绍',
+        },
+        items: [
+          "TODO6"
+        ],
+      },
+    ],
+};
+
+module.exports = sidebars;

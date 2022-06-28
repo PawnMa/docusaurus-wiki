@@ -46,19 +46,17 @@ const sidebars = {
         /* 一级目录 */
         items: 
         [
-          'TODO1',
-          // /* 二级目录 */
-          // {
-          //   type: 'category',
-          //   label: 'LVGL专栏',
-          //   link: {
-          //     type: 'generated-index',
-          //   },
-          //   items: [
-          //     'LVGL移植', 
-          //     'LVGL', 
-          //   ],
-          // },
+          /* 二级目录 */
+          {
+            type: 'category',
+            label: 'TouchGFX专栏',
+            link: {
+              type: 'generated-index',
+            },
+            items: [
+              '中文打印与滚动文本框', 
+            ],
+          },
         ],
       },
     ],  

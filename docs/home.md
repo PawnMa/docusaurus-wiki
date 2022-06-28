@@ -12,7 +12,6 @@ slug: /
 Hi there~  
 这是我的知识库。
 
-[![badge](https://img.shields.io/github/deployments/PawnMa/docusaurus-wiki/Production?label=Build&style=flat-square) ](https://vercel.com/pawnma/docusaurus-wiki/deployments)
-[![badge](https://img.shields.io/github/last-commit/PawnMa/docusaurus-wiki?color=FCD734&label=Last%20commit&style=flat-square)](https://github.com/PawnMa/docusaurus-wiki/commits/main)
+[![badge](https://img.shields.io/github/deployments/PawnMa/docusaurus-wiki/Production?label=Build&style=flat-square)](https://vercel.com/pawnma/docusaurus-wiki/deployments) [![badge](https://img.shields.io/github/last-commit/PawnMa/docusaurus-wiki?color=FCD734&label=Last%20commit&style=flat-square)](https://github.com/PawnMa/docusaurus-wiki/commits/main)
 
 <h6>PawnMa | Built with Docusaurus</h6>

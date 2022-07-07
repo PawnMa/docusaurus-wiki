@@ -14,4 +14,4 @@ Hi there~
 
 [![badge](https://img.shields.io/github/deployments/PawnMa/docusaurus-wiki/Production?label=Build&style=flat-square)](https://vercel.com/pawnma/docusaurus-wiki/deployments) [![badge](https://img.shields.io/github/last-commit/PawnMa/docusaurus-wiki?color=FCD734&label=Last%20commit&style=flat-square)](https://github.com/PawnMa/docusaurus-wiki/commits/main)
 
-<h6>PawnMa | Built with Docusaurus</h6>
+<h6>PawnMa | <a href="https://beian.miit.gov.cn"> 浙 ICP 备 2022019979 号 </a> | Built with Docusaurus</h6>

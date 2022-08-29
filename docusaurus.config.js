@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 // import math from 'remark-math'
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '码前小卒',
+  title: '小马哥',
   tagline: '^_^',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -149,6 +149,10 @@ const config = {
             href: "https://space.bilibili.com/11466079",
             label: "bilibili",
           },
+          {
+            href: "https://beian.miit.gov.cn",
+            label: "浙 ICP 备 2022019979 号",
+          },        
         ],
         //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },

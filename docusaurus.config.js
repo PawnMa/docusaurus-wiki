@@ -155,7 +155,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      giscus: {
+        repo: 'PawnMa/docusaurus-wiki',
+        repoId: 'R_kgDOHd8PfA',
+        category: 'General',
+        categoryId: 'DIC_kwDOHd8PfM4CTR8c',
+      },
     }),
 };
 
 module.exports = config;
+

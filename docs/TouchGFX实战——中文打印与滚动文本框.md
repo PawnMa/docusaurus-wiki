@@ -16,7 +16,6 @@ title: 中文打印与滚动文本框
 <div style={{textAlign: 'center'}}>
   <img src={require('./images/gif3.gif').default} />
 </div>
-
 ## 常用文本方案
 
 ​	在设计程序过程中，涉及到文本，我们通常会使用TouchGFX Designer的文本资源管理器功能，具体使用方法如下。

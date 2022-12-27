@@ -2,6 +2,7 @@
 id: Home
 title: PawnMa's Wiki
 sidebar_label: home
+hide_comment: true
 slug: /
 ---
 

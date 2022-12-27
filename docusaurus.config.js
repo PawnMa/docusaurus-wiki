@@ -102,18 +102,13 @@ const config = {
           //   label: 'Tutorial',
           // },
           {
-            to: '嵌入式开发', 
-            label: '嵌入式开发', 
+            to: '机器人开发', 
+            label: '机器人开发', 
             position: 'right'
           },
           {
             to: '软件编程', 
             label: '软件编程', 
-            position: 'right'
-          },
-          {
-            to: '电机控制', 
-            label: '电机控制', 
             position: 'right'
           },
           {

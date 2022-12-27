@@ -18,7 +18,7 @@ const sidebars = {
 
       
     // ],
-    嵌入式开发: 
+    机器人开发: 
     [
       'Home',
       {
@@ -29,7 +29,7 @@ const sidebars = {
           //description: 'describtion to be updated',
           keywords: ['x', 'x'],
           /* 添加界面 */
-          slug: '/嵌入式开发',
+          slug: '/机器人开发',
         },
         items: [
           'TODO0',  
@@ -89,22 +89,6 @@ const sidebars = {
         ],
       },
     ],
-    电机控制: 
-    [
-      {
-        type: 'category',
-        label: '电机控制',
-        link: {
-          type: 'generated-index',
-          //description: 'describtion to be updated',
-          keywords: ['x', 'x'],
-          slug: '/电机控制',
-        },
-        items: [
-          "TODO4"
-        ],
-      },
-    ],
     高效办公: 
     [
       {
@@ -117,7 +101,7 @@ const sidebars = {
           slug: '/高效办公',
         },
         items: [
-          "TODO5"
+          "Docusaurus博客语法模板"
         ],
       },
     ],

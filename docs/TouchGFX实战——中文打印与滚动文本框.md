@@ -13,7 +13,9 @@ title: 中文打印与滚动文本框
 
 ​	整体效果如下，文本自动换行，滚动刷新。可以用来显示log、作串口上位机等应用。
 
-![gif3](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024760.gif)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/gif3.gif').default} />
+</div>
 
 ## 常用文本方案
 
@@ -27,15 +29,21 @@ title: 中文打印与滚动文本框
 
 ​	如图创建了一个名为chinese的文本字体，字体属性如右侧显示。
 
-![image-20220624150256293](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281031639.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624150256293.png').default} />
+</div>
 
 ​	再通过Texts创建一个文本，如下图为`你好！`与`欢迎使用TouchGFX`，选用刚才创建的文本字体。
 
-![image-20220624151337514](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024500.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624151337514.png').default} />
+</div>
 
 ​	创建控件并选择`TextID`显示。
 
-![image-20220624152705650](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024855.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624152705650.png').default}/>
+</div>
 
 ​	编写代码如下，实现定时文本切换。
 
@@ -63,7 +71,9 @@ void Screen1View::handleTickEvent()
 
 ​	效果如下：
 
-![gif1](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024963.gif)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/gif1.gif').default} />
+</div>
 
 
 
@@ -85,7 +95,9 @@ void Screen1View::handleTickEvent()
 
 ​	按照如上编码范围修改TouchGFX Designer的配置
 
-![image-20220624154427947](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024450.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624154427947.png').default} />
+</div>
 
 ```
 Wildcard Characters：!”"#*%&()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿><【】；‘’，。、｛｝：“”《》？|·~！@#￥%……&*（）——+
@@ -94,7 +106,9 @@ Wildcard Ranges：0x20-0x1BF,0X4e00-0X9f5a
 
 ​	之后创建一个文本框，开启Wildcard1，合理设置Buffer大小。
 
-![image-20220624154832310](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024542.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624154832310.png').default} />
+</div>
 
 ​	通过代码打印即可显示中文文本，**注意**需要将打印所在文本格式调成**UTF8**文本，可使用VS Code来重新编码保存，否则不能使用`Unicode::fromUTF8`来正常显示。
 
@@ -120,7 +134,9 @@ void Screen1View::TextAreaAddStr(uint8_t* str, uint32_t len)
 
 ​	效果如下：
 
-![gif2](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024817.gif)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/gif2.gif').default} />
+</div>
 
 
 
@@ -128,15 +144,21 @@ void Screen1View::TextAreaAddStr(uint8_t* str, uint32_t len)
 
 ​	当所打印字符超出文本框宽度时可能会出现显示不全的问题，这时候在invalidate之前调用官方API`textArea1.setWideTextAction(WIDE_TEXT_CHARWRAP);`即可实现自动换行。官方注释说明`WIDE_TEXT_CHARWRAP`适合中文换行所用，效果如下。
 
-![image-20220624165806616](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281024431.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624165806616.png').default} />
+</div>
 
 ​	当然，配合自动换行还有滚动显示可用，我们需要加入滚动窗口控件。
 
-![image-20220624170333910](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281025747.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624170333910.png').default} />
+</div>
 
 并且为了实现滚动效果，我们需要增大文本框的长度，如下图所示。
 
-![image-20220624170407390](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281025644.png)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/image-20220624170407390.png').default} />
+</div>
 
 ​	接下来我们需要定义一个textBuf，来负责搬运，合成与滚动刷新判断，全部代码如下
 
@@ -222,8 +244,12 @@ void Screen1View::TextAreaAddStr(uint8_t* str, uint32_t len)
 
 ​	实机效果如下所示，显示串口发来的任意数据，也算是一种有趣的玩法，用嵌入式调试嵌入式（dog…）。但是要注意一般上位机发送都是GBK编码，需要做编码转换。Fatfs文件系统中有相关的转换代码。
 
-![gif4](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281025595.gif)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/gif4.gif').default} />
+</div>
 
 ​	稍加修饰就可以实现更多玩法。
 
-![gif5](https://typora-images-mz.oss-cn-hangzhou.aliyuncs.com/202206281025060.gif)
+<div style={{textAlign: 'center'}}>
+  <img src={require('./images/gif5.gif').default} />
+</div>

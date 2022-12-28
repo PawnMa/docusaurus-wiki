@@ -46,7 +46,7 @@ title: 中文打印与滚动文本框
 
 ​	编写代码如下，实现定时文本切换。
 
-```cpp
+```cpp showLineNumbers
 void Screen1View::handleTickEvent()
 {
     this->tickCounter++;
@@ -111,7 +111,7 @@ Wildcard Ranges：0x20-0x1BF,0X4e00-0X9f5a
 
 ​	通过代码打印即可显示中文文本，**注意**需要将打印所在文本格式调成**UTF8**文本，可使用VS Code来重新编码保存，否则不能使用`Unicode::fromUTF8`来正常显示。
 
-```cpp
+```cpp showLineNumbers
 void Screen1View::handleTickEvent()
 {
     tickCounter++;
@@ -164,7 +164,7 @@ void Screen1View::TextAreaAddStr(uint8_t* str, uint32_t len)
 - 判断当窗口满时开始自动滚动窗口条
 - 判断当滚动条滚动到最后时，清空显示并将滚动条复位。
 
-```cpp
+```cpp showLineNumbers
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <stdio.h>

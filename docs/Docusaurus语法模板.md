@@ -85,3 +85,30 @@ $$
   <img src={require('/img/logo.png').default} width="150" />
 </div>
 
+***
+**代码相关**
+```cpp {5,13-19} showLineNumbers
+void Screen1View::handleTickEvent()
+{
+    this->tickCounter++;
+    static uint8_t change = 0;
+    /* 高亮测试 */
+    if (this->tickCounter % 50 == 0)
+    {
+        if (change)
+        {
+            change = 0;
+            textArea1.setTypedText(TypedText(T_RESOURCEID2));
+        }
+        /* 高亮测试 */
+        else
+        {
+			change = 1;
+			textArea1.setTypedText(TypedText(T_RESOURCEID1));
+        }
+        /* 高亮测试 */
+        textArea1.invalidate();
+    }
+}
+```
+

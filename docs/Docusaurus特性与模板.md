@@ -2,6 +2,7 @@
 id: Docusaurus特性与模板
 title: Docusaurus特性与模板
 ---
+​	本文主要是对Docusaurus的基本特性及基本语法的演示。
 ***
 **告示框模板**
 
@@ -143,3 +144,4 @@ void Screen1View::handleTickEvent()
     src="html/STLink_V2.1_TypeC.html"> 
     </iframe>
 </div>
+

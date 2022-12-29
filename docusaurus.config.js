@@ -90,10 +90,10 @@ const config = {
     ({
       navbar: {
         title: '码前小卒',
-        // logo: {
-        //   alt: 'My Site Logo',
-        //   src: 'img/logo.svg',
-        // },
+        logo: {
+          alt: 'My Site Logo',
+          src: 'img/favicon.ico',
+        },
         items: [
           // {
           //   type: 'doc',

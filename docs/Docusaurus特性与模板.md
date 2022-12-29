@@ -1,6 +1,6 @@
 ---
-id: Docusaurus博客语法模板
-title: Docusaurus语法模板
+id: Docusaurus特性与模板
+title: Docusaurus特性与模板
 ---
 ***
 **告示框模板**
@@ -35,7 +35,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 :::
 ***
- **React 组件**
+**React 组件**
 
 export const Highlight = ({children, color}) => (
   <span
@@ -54,7 +54,7 @@ export const Highlight = ({children, color}) => (
 I can write **Markdown** alongside my _JSX_!
 
 ***
- **Tabs 组件**
+**Tabs 组件**
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -72,7 +72,7 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ***
- **公式**
+**公式**
 $$
 I = \int_0^{2\pi} \sin(x)\,dx
 $$
@@ -111,4 +111,35 @@ void Screen1View::handleTickEvent()
     }
 }
 ```
+****
 
+**模型插入**
+
+<div style={{height: "60vh"}}>
+<iframe
+  width="100%"
+  height="100%"
+  scrolling="no" 	  
+  src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/PawnMa/3D_Model/main/STLink%20V2.1.pdf.mtl,https://raw.githubusercontent.com/PawnMa/3D_Model/main/STLink%20V2.1.pdf.obj$camera=1.50899,0.19617,6.12087,0.38280,0.00000,0.00577,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1"
+></iframe>
+</div>
+
+****
+
+**PCB插入**
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
+    src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=1A7F796E-20FF-4111-98CD-26486B1C1527&activeView=PCB"> 
+    </iframe>
+</div>
+
+****
+
+**BOM插入**
+<div class="iframe_viewer">
+    <iframe 
+    scrolling="no"
+    src="html/STLink_V2.1_TypeC.html"> 
+    </iframe>
+</div>

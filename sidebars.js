@@ -101,7 +101,7 @@ const sidebars = {
           slug: '/高效办公',
         },
         items: [
-          "Docusaurus博客语法模板"
+          "Docusaurus特性与模板"
         ],
       },
     ],
